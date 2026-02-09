@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    environment:
+      APP_NAME: "NBRB Live Dashboard"
+      WS_UPDATE_INTERVAL: 5
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
